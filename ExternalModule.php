@@ -19,7 +19,7 @@ class ExternalModule extends AbstractExternalModule {
      * @inheritdoc
      */
     function hook_every_page_top($project_id) {
-        addImagemapActionTag($project_id);
+        $this->addImagemapActionTag($project_id);
     }
     
     
@@ -29,7 +29,7 @@ class ExternalModule extends AbstractExternalModule {
      * @param int $project_id
      *   An integer containing the current project id.
      */
-    function addImagemapActionTag($project_id) {
+    protected function addImagemapActionTag($project_id) {
         $js_files = array();
 
         if (PAGE == 'Design/online_designer.php' && $project_id) {
@@ -46,7 +46,7 @@ class ExternalModule extends AbstractExternalModule {
      * @param array $js_files
      *   An array of js files paths within the module.
      */
-    function loadJsFiles($js_files) {
+    protected function loadJsFiles($js_files) {
         foreach ($js_files as $file) {
             echo '<script src="' . $this->getUrl($file) . '"></script>';
         }
