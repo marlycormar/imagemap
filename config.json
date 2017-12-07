@@ -1,9 +1,9 @@
 {
     "name": "Pain Map",
     "namespace": "PainMap\\ExternalModule",
-    "description": "TODO.",
+    "description": "This REDCap module improves the survey participants experience by providing an easy way to indicate painful body parts as well as levels of pain. Such improvement is achieved by allowing the user to select the image representing the user's current pain level or by clicking predetermined regions in a diagram of the human body. To use, add of the following action tag with respective value to a Text Box field: <br> <div style='color:red;'>&nbsp;&nbsp;@IMAGEMAP = PAINMAP_MALE<br> &nbsp;&nbsp;@IMAGEMAP = PAINMAP_FEMALE<br> &nbsp;&nbsp;@IMAGEMAP = SMILE_SCALE</div>",
     "permissions": [
-        "hook_every_page_top"
+        "redcap_every_page_top"
     ],
     "authors": [
         {
