@@ -70,10 +70,6 @@ class ExternalModule extends AbstractExternalModule {
         
         $this->includeJs('js/imageMapster.js');
         $this->includeJs('js/imagemap.js');
-        
-        if(!empty($Proj->metadata['painmap_female']))
-            print_r ($Proj->metadata['painmap_female']);
-
     }
 
     /**
