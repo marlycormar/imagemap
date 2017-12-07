@@ -7,20 +7,23 @@ This REDCap module improves the survey participants experience by providing an e
 
 
 ## Installation
-- Clone this repo into to `<redcap-root>/modules/painmap_v1.0`.
-- Go to **Control Center > Manage External Modules** and enable Pain Map.
-- For each project you want to use this module, go to the project home page, click on **Manage External Modules** link, and then enable Pain Map for that project.
+- Clone this repo into `<redcap-root>/modules/painmap_v1.0`.
+- Go to **Control Center > External Modules** and enable Pain Map.
+- To activate this module for a particular project, go to the project home page, click on the **External Modules** link, and then enable Pain Map for that project.
 
 ## Features included
-This module defines a new action tag: `@IMAGEMAP`. The possible values for this tag are `PAINMAP_MALE` (representation of a generic male body), `PAINMAP_FEMALE` (representation of a female body), and `SMILE_SCALE` (six faces diagram). The values correspond to the following images:
+This module defines a new action tag: `@IMAGEMAP`. The possible values for this tag are `PAINMAP_MALE` (representation of a generic male body), `PAINMAP_FEMALE` (representation of a female body), and `SMILE_SCALE` (six faces diagram); they correspond to the following images:
 
 **PAINMAP_MALE**
+
 ![PAINMAP_MALE](./img/painmap_male.png)
 
 **PAINMAP_FEMALE**
+
 ![PAINMAP_FEMALE](./img/painmap_female.png)
 
 **SMILE_SCALE**
+
 ![SMILE_SCALE](./img/smile_scale.png)
 
 
