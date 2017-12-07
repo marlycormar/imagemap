@@ -1,39 +1,14 @@
 {
     "name": "Pain Map",
     "namespace": "PainMap\\ExternalModule",
-    "description": "To Do.",
+    "description": "TODO.",
     "permissions": [
         "hook_every_page_top"
     ],
     "authors": [
         {
-            "name": "Philip Chase",
-            "email": "pbc@ufl.edu",
-            "institution": "CTS-IT - University of Florida"
-        },
-        {
-            "name": "Taryn Stoffs",
-            "email": "tls@ufl.edu",
-            "institution": "CTS-IT - University of Florida"
-        },
-        {
-            "name": "Surya Prasanna",
-            "email": "suryayalla@ufl.edu",
-            "institution": "CTS-IT - University of Florida"
-        },
-        {
-            "name": "Prasad Lanka",
-            "email": "planka@ufl.edu",
-            "institution": "CTS-IT - University of Florida"
-        },
-        {
-            "name": "Dileep Rajput",
-            "email": "rajputd@ufl.edu",
-            "institution": "CTS-IT - University of Florida"
-        },
-        {
-            "name": "Stewart Wehmeyer",
-            "email": "swehmeyer@ufl.edu",
+            "name": "Marly Cormar",
+            "email": "marlycormar@ufl.edu",
             "institution": "CTS-IT - University of Florida"
         },
         {
@@ -42,14 +17,9 @@
             "institution": "CTS-IT - University of Florida"
         },
         {
-            "name": "Mike Conlon, Ph.D.",
-            "email": "mconlon@ufl.edu",
-            "institution": "University of Florida"
-        },
-        {
-            "name": "Carl J Pepine, M.D., MACC",
+            "name": "Andy Martin",
             "email": "",
-            "institution": "University of Florida"
+            "institution": "Stanford University"
         }
     ]
 }
