@@ -1,5 +1,5 @@
 # REDCap module: Pain Map
-This REDCap module improves the survey participants experience by providing an easy way to indicate painful body parts as well as levels of pain. Such improvement is achieved by allowing the user to select the image representing the user's current pain level or by clicking predetermined regions in a diagram of the human body.
+This REDCap module provides a graphical method of surveying a participant's experience of pain by providing an easy way to indicate painful body parts as well as levels of pain. The survey participant is able to select the image representing the user's current pain level or by clicking predetermined regions in a diagram of the human body.
 
 
 ## Prerequisites
@@ -7,7 +7,7 @@ This REDCap module improves the survey participants experience by providing an e
 
 
 ## Installation
-- Clone this repo into `<redcap-root>/modules/painmap_v1.0`.
+- Clone this repo into `<redcap-root>/modules/painmap_v<version_number>`.
 - Go to **Control Center > External Modules** and enable Pain Map.
 - To activate this module for a particular project, go to the project home page, click on the **External Modules** link, and then enable Pain Map for that project.
 
@@ -30,7 +30,7 @@ This module defines a new action tag: `@IMAGEMAP`. The possible values for this 
 ## Usage
 To display one of the images above in a survey or data entry form, add a new field of type **Text Box** and include one of the following options in the **Action Tags / Field Annotation (optional)** field:
 
-    @IMAGEMAP = PAINMAP_MALE 
+    @IMAGEMAP = PAINMAP_MALE
     @IMAGEMAP = PAINMAP_FEMALE
     @IMAGEMAP = SMILE_SCALE
 
