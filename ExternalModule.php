@@ -46,8 +46,6 @@ class ExternalModule extends AbstractExternalModule {
             if (!$display_mode = Form::getValueInActionTag($field_info['misc'], '@IMAGEMAP')) {
                 continue;
             }
-
-            //print_r($field_info);
             
             $row = $this->getDefaultConfig($display_mode);
             $row['field'] = $field_name;
