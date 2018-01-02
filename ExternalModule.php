@@ -50,11 +50,13 @@ class ExternalModule extends AbstractExternalModule {
             $row = $this->getDefaultConfig($display_mode);
             $row['field'] = $field_name;
 
-            $b64 = base64_encode(file_get_contents(dirname(__FILE__) . '/' . $row['image']));
+            $dir = $this->getModulePath();
+
+            $b64 = base64_encode(file_get_contents($dir . $row['image']));
             $src = "data:image/png;base64,$b64";
             $row['src'] = $src;
 
-            $row['areas'] = file_get_contents(dirname(__FILE__) . '/' .  $row['map']);
+            $row['areas'] = file_get_contents($dir .  $row['map']);
             $row['type'] = $field_info['element_type'];
 
             $settings[] = $row;
