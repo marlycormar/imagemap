@@ -1,4 +1,4 @@
-# REDCap module: Pain Map
+# REDCap module: Image Map
 This REDCap module improves the survey participants experience by providing an easy way to indicate painful body parts as well as levels of pain. Such improvement is achieved by allowing the user to select the image representing the user's current pain level or by clicking predetermined regions in a diagram of the human body.
 
 
