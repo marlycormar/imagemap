@@ -25,8 +25,7 @@ class ExternalModule extends AbstractExternalModule {
         if (PAGE == 'Design/online_designer.php' && $project_id) {
 
             //TODO:  CLean up this help stuff and potentially recommend the question type and data-dictionary options
-
-            $help = "Availalbe image maps are:";
+            $help = "Converts a Text, Radio, or Checkbox Box field into one of the following clickable images:";
             foreach ($this->getImageMapParams() as $map => $params) {
                 $help .= "<br><dt class='imagemap'>" . $map . "</dt><dd class='imagemap'>".$params['desc']."</dd>";
             };
