@@ -23,7 +23,7 @@ $(document).ready(function() {
         }
 
         var tag_name = '@IMAGEMAP';
-        var descr = 'TODO.';
+        var descr = imageMapEM.maps;
 
         // Creating a new action tag row.
         var $new_action_tag = $default_action_tag.clone();
@@ -37,7 +37,7 @@ $(document).ready(function() {
         $cols.filter(isDefaultLabelColumn).text(tag_name);
 
         // Column 3: updating action tag description.
-        $cols.last().text(descr);
+        $cols.last().html(descr);
 
         // Placing new action tag.
         $new_action_tag.insertAfter($default_action_tag);

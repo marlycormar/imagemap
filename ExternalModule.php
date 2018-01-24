@@ -23,6 +23,17 @@ class ExternalModule extends AbstractExternalModule {
      */
     function redcap_every_page_top($project_id) {
         if (PAGE == 'Design/online_designer.php' && $project_id) {
+
+            //TODO:  CLean up this help stuff and potentially recommend the question type and data-dictionary options
+
+            $help = "Availalbe image maps are:";
+            foreach ($this->getImageMapParams() as $map => $params) {
+                $help .= "<br><dt class='imagemap'>" . $map . "</dt><dd class='imagemap'>".$params['desc']."</dd>";
+            };
+            echo "<script>var imageMapEM = imageMapEM || {};</script>";
+            echo "<script>imageMapEM.maps = " . json_encode($help) . ";</script>";
+            echo "<style>dt.imagemap { display: inline-block; width: 180px; }  dd.imagemap { display: inline; }</style>";
+
             $this->includeJs('js/helper.js');
         }
 
@@ -44,6 +55,8 @@ class ExternalModule extends AbstractExternalModule {
 
         // Loop through action tags
         $instrument = $_GET['page'];    // This is a bit of a hack, but in surveys this is set before the every_page_top hook is called
+
+        //TODO: Consider switching over to ActionTagHelper to support single-param overrides in imagemap (such as hiding or showing the radio/checkboxes)
 
         // Check action-tags for this page
         foreach (array_keys($Proj->forms[$instrument]['fields']) as $field_name) {
@@ -92,13 +105,20 @@ class ExternalModule extends AbstractExternalModule {
 
 
     /**
-     * Return the array of params for the specified imagemap
+     * Return the array of params for the specified imagemap (or all maps)
      *
      * @param $image_map
      * @return mixed
      */
-    protected function getImageMapParams($image_map) {
+    protected function getImageMapParams($image_map = null) {
+
+        //TODO: Support having custom-maps defined via the EM config
         $image_maps = $this->getConfig()['default-image-maps'];
-        return $image_maps[$image_map];
+        if ($image_map !== null) {
+            return $image_maps[$image_map];
+        } else {
+            return $image_maps;
+        }
+
     }
 }
