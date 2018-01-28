@@ -23,7 +23,7 @@ $(document).ready(function() {
         }
 
         var tag_name = '@IMAGEMAP';
-        var descr = 'Converts a Text Box field into one of the following clickable images: male, female, or smile scale. The possible values for @IMAGEMAP are PAINMAP_FEMALE, PAINMAP_MALE, and SMILE_SCALE corresponding to a generic female body, a generic male body, and a smile scale, respectively. For example, to display a male body with clickable body parts, you may use @IMAGEMAP=PAINMAP_MALE.';
+        var descr = imageMapEM.maps;
 
         // Creating a new action tag row.
         var $new_action_tag = $default_action_tag.clone();
@@ -37,7 +37,7 @@ $(document).ready(function() {
         $cols.filter(isDefaultLabelColumn).text(tag_name);
 
         // Column 3: updating action tag description.
-        $cols.last().text(descr);
+        $cols.last().html(descr);
 
         // Placing new action tag.
         $new_action_tag.insertAfter($default_action_tag);

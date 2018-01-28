@@ -1,4 +1,4 @@
-# REDCap module: Pain Map
+# REDCap module: Image Map
 This REDCap module provides a graphical method of surveying a participant's experience of pain by providing an easy way to indicate painful body parts as well as levels of pain. The survey participant is able to select the image representing the user's current pain level or by clicking predetermined regions in a diagram of the human body.
 
 
@@ -10,7 +10,7 @@ This REDCap module provides a graphical method of surveying a participant's expe
 - Obtain this module from the Consortium [REDCap Repo] (https://redcap.vanderbilt.edu/consortium/modules/index.php) from the control center.
 
 ## Manual Installation
-- Clone this repo into `<redcap-root>/modules/painmap_v<version_number>`.
+- Clone this repo into `<redcap-root>/modules/imagemap_v0.0`.
 - Go to **Control Center > External Modules** and enable Pain Map.
 - To activate this module for a particular project, go to the project home page, click on the **External Modules** link, and then enable Pain Map for that project.
 
