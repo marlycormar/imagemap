@@ -3,7 +3,7 @@ This REDCap module provides a graphical method of surveying a participant's expe
 
 
 ## Prerequisites
-- REDCap >= 8.0.0 (for versions < 8.0.0, [REDCap Modules](https://github.com/vanderbilt/redcap-external-modules) is required).
+- REDCap >= 8.0.3 (for versions < 8.0.0, [REDCap Modules](https://github.com/vanderbilt/redcap-external-modules) is required).
 
 
 ## Easy Installation

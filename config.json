@@ -27,7 +27,9 @@
             "institution": "University of Florida - CTSI"
         }
     ],
-
+    "compatibility": {
+        "redcap-version-min": "8.0.3"
+    },
     "default-image-maps": {
         "PAINMAP_MALE": {
             "name": "painmap_male",
