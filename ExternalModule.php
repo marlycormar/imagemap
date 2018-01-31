@@ -1,25 +1,38 @@
 <?php
 /**
  * @file
- * Provides ExternalModule class for Pain Map.
+ * Provides ExternalModule class for Image Map.
  */
 
-namespace PainMap\ExternalModule;
+namespace ImageMap\ExternalModule;
 
 use ExternalModules\AbstractExternalModule;
 use ExternalModules\ExternalModules;
 use Form;
+Use Stanford\Utility\ActionTagHelper;
 
 /**
  * ExternalModule class for Pain Map.
  */
 class ExternalModule extends AbstractExternalModule {
 
+    public $tag = "@IMAGEMAP";
+
     /**
      * @inheritdoc
      */
     function redcap_every_page_top($project_id) {
         if (PAGE == 'Design/online_designer.php' && $project_id) {
+
+            //TODO:  CLean up this help stuff and potentially recommend the question type and data-dictionary options
+            $help = "Converts a Text, Radio, or Checkbox Box field into one of the following clickable images:";
+            foreach ($this->getImageMapParams() as $map => $params) {
+                $help .= "<br><dt class='imagemap'>" . $map . "</dt><dd class='imagemap'>".$params['desc']."</dd>";
+            };
+            echo "<script>var imageMapEM = imageMapEM || {};</script>";
+            echo "<script>imageMapEM.maps = " . json_encode($help) . ";</script>";
+            echo "<style>dt.imagemap { display: inline-block; width: 180px; }  dd.imagemap { display: inline; }</style>";
+
             $this->includeJs('js/helper.js');
         }
 
@@ -39,15 +52,20 @@ class ExternalModule extends AbstractExternalModule {
         global $Proj;
         $settings = array();
 
-        foreach (array_keys($Proj->forms[$_GET['page']]['fields']) as $field_name) {
-            $field_info = $Proj->metadata[$field_name];
-            
+        // Loop through action tags
+        $instrument = $_GET['page'];    // This is a bit of a hack, but in surveys this is set before the every_page_top hook is called
 
-            if (!$display_mode = Form::getValueInActionTag($field_info['misc'], '@IMAGEMAP')) {
+        //TODO: Consider switching over to ActionTagHelper to support single-param overrides in imagemap (such as hiding or showing the radio/checkboxes)
+
+        // Check action-tags for this page
+        foreach (array_keys($Proj->forms[$instrument]['fields']) as $field_name) {
+            $field_info = $Proj->metadata[$field_name];
+
+            if (!$display_mode = Form::getValueInActionTag($field_info['misc'], $this->tag)) {
                 continue;
             }
-            
-            $row = $this->getDefaultConfig($display_mode);
+
+            $row = $this->getImageMapParams($display_mode);
             $row['field'] = $field_name;
 
             $dir = $this->getModulePath();
@@ -66,53 +84,42 @@ class ExternalModule extends AbstractExternalModule {
             return;
         }
 
-        echo '<script>var imageMapLibrary = ' . json_encode($settings) . ';</script>';
-        
+        echo '<script>var imageMapEM = imageMapEM || {};</script>';
+        echo '<script>imageMapEM.settings = ' . json_encode($settings) . ';</script>';
+
         $this->includeJs('js/imageMapster.js');
         $this->includeJs('js/imagemap.js');
     }
 
     /**
-     * Includes a local JS file.
+     * Includes a local JS file - uses the API endpoint if auth type is shib
      *
      * @param string $path
      *   The relative path to the js file.
      */
     protected function includeJs($path) {
-        echo '<script src="' . $this->getUrl($path) . '"></script>';
+        // For shib installations, it is necessary to use the API endpoint for resources
+        global $auth_meth;
+        $ext_path = $auth_meth == 'shibboleth' ? $this->getUrl($path, true, true) : $this->getUrl($path);
+        echo '<script src="' . $ext_path . '"></script>';
     }
 
-    protected function getDefaultConfig($display_mode) {
-        switch ($display_mode) {
-            case 'PAINMAP_MALE':
-                return array(
-                    'name' => 'painmap_male',
-                    'alt' => 'Male Front Pain Map',
-                    'image' => 'img/painmap_male.png',
-                    'width' => 553,
-                    'height'=> 580,
-                    'map' => 'maps/painmap_male.html'
-                );
-            case 'PAINMAP_FEMALE':
-                return array(
-                    'name'  => 'painmap_female',
-                    'alt'   => "Female Front Pain Map",
-                    'image' => "img/painmap_female.png",
-                    'width' => 518,
-                    'height'=> 580,
-                    'map'   => "maps/painmap_female.html"
-                );
-            case  'SMILE_SCALE':
-                return array(
-                    'name'  => 'smile_scale',
-                    'alt'   => "Smile Scale",
-                    'image' => "img/smile_scale.png",
-                    'width' => 602,
-                    'height'=> 147,
-                    'map'   => "maps/smile_scale.html",
-                    'singleSelect' => true,
-                    'fillColor'    => '00aa00'
-                );
+
+    /**
+     * Return the array of params for the specified imagemap (or all maps)
+     *
+     * @param $image_map
+     * @return mixed
+     */
+    protected function getImageMapParams($image_map = null) {
+
+        //TODO: Support having custom-maps defined via the EM config
+        $image_maps = $this->getConfig()['default-image-maps'];
+        if ($image_map !== null) {
+            return $image_maps[$image_map];
+        } else {
+            return $image_maps;
         }
+
     }
 }
