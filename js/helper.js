@@ -23,11 +23,8 @@ $(document).ready(function() {
         }
 
         var tag_name = '@IMAGEMAP';
-<<<<<<< HEAD
-        var descr = imageMapEM.maps;
-=======
         var descr = 'Converts a Text Box field into one of the following clickable images: male, female, or smile scale. The possible values for @IMAGEMAP are PAINMAP_FEMALE, PAINMAP_MALE, and SMILE_SCALE corresponding to a generic female body, a generic male body, and a smile scale, respectively. For example, to display a male body with clickable body parts, you may use @IMAGEMAP=PAINMAP_MALE.';
->>>>>>> ctsit/develop
+        //TODO - get all defined maps in help: var descr = imageMapEM.maps;
 
         // Creating a new action tag row.
         var $new_action_tag = $default_action_tag.clone();
