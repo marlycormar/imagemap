@@ -65,14 +65,18 @@ class ExternalModule extends AbstractExternalModule {
                 continue;
             }
 
-            $row = $this->getImageMapParams($display_mode);
+            $row = $this->getDefaultConfig($display_mode);
+            //TODO: $row = $this->getImageMapParams($display_mode);
+            
             $row['field'] = $field_name;
 
-            $b64 = base64_encode(file_get_contents($this->getUrl($row['image'])));
+            $dir = $this->getModulePath();
+
+            $b64 = base64_encode(file_get_contents($dir . $row['image']));
             $src = "data:image/png;base64,$b64";
             $row['src'] = $src;
 
-            $row['areas'] = file_get_contents($this->getUrl($row['map']));
+            $row['areas'] = file_get_contents($dir .  $row['map']);
             $row['type'] = $field_info['element_type'];
 
             $settings[] = $row;
@@ -84,7 +88,7 @@ class ExternalModule extends AbstractExternalModule {
 
         echo '<script>var imageMapEM = imageMapEM || {};</script>';
         echo '<script>imageMapEM.settings = ' . json_encode($settings) . ';</script>';
-        
+
         $this->includeJs('js/imageMapster.js');
         $this->includeJs('js/imagemap.js');
     }

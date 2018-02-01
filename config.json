@@ -1,7 +1,7 @@
 {
     "name": "Image Map",
     "namespace": "ImageMap\\ExternalModule",
-    "description": "This REDCap module replaces an input, radio, or checkbox field with an image that users can interact with to select one or more options.  Specific applications include a body map (the over 70 body regions) and a smile scale from 1-7 with facial expressions.  Admins and users can add additional maps via the config.  It is tied to questions via custom action-tags:<br> <div style='color:red;'>&nbsp;&nbsp;@IMAGEMAP = PAINMAP_MALE<br> &nbsp;&nbsp;@IMAGEMAP = PAINMAP_FEMALE<br> &nbsp;&nbsp;@IMAGEMAP = SMILE_SCALE</div>",
+    "description": "This REDCap module replaces an input, radio, or checkbox field with an image that users can interact with to select one or more options.  Specific applications include a body map (the over 70 body regions) and a smile scale from 1-7 with facial expressions.  Admins and users can add additional maps via the config.  It is tied to questions via custom action-tags:<br> <div style='color:red;'>&nbsp;&nbsp;@IMAGEMAP = PAINMAP_MALE<br> &nbsp;&nbsp;@IMAGEMAP = PAINMAP_FEMALE<br> &nbsp;&nbsp;@IMAGEMAP = SMILE_SCALE</div><br>See the complete <b><a href='https://github.com/ctsit/painmap' target='_blank'>documentation</a></b> at <a href='https://github.com/ctsit/painmap' target='_blank'>https://github.com/ctsit/painmap</a>.",
     "permissions": [
         "redcap_every_page_top"
     ],
@@ -9,12 +9,12 @@
         {
             "name": "Marly Cormar",
             "email": "marlycormar@ufl.edu",
-            "institution": "CTS-IT - University of Florida"
+            "institution": "University of Florida - CTSI"
         },
         {
             "name": "Tiago Bember",
             "email": "tbembersimeao@ufl.edu",
-            "institution": "CTS-IT - University of Florida"
+            "institution": "University of Florida - CTSI"
         },
         {
             "name": "Andy Martin",
@@ -24,7 +24,7 @@
         {
             "name": "Philip B. Chase",
             "email": "pbc@ufl.edu",
-            "institution": "CTS-IT - University of Florida"
+            "institution": "University of Florida - CTSI"
         }
     ],
 
