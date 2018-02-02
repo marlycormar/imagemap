@@ -23,8 +23,22 @@ $(document).ready(function() {
         }
 
         var tag_name = '@IMAGEMAP';
-        var descr = 'Converts a Text Box field into one of the following clickable images: male, female, or smile scale. The possible values for @IMAGEMAP are PAINMAP_FEMALE, PAINMAP_MALE, and SMILE_SCALE corresponding to a generic female body, a generic male body, and a smile scale, respectively. For example, to display a male body with clickable body parts, you may use @IMAGEMAP=PAINMAP_MALE.';
-        //TODO - get all defined maps in help: var descr = imageMapEM.maps;
+
+        // Create the help text
+        var descr = $('<div></div>')
+            .addClass('imagemap-container')
+            .html('Converts a radio, checkbox, or text field into a clickable image. For example, to display a male body '
+                + 'with clickable body parts, you may use <nobr>@IMAGEMAP=PAINMAP_MALE</nobr>.  For a full list of available '
+                + 'image maps and details about options, please reference the:<br>');
+        var btn = $('<a></a>')
+            .attr('href', imageMapEM.helpUrl)
+            .attr('target', '_BLANK')
+            .append(
+                $('<div></div>')
+                    .addClass('btn btn-xs btn-primary')
+                    .text('Full Documentation')
+            )
+            .appendTo(descr);
 
         // Creating a new action tag row.
         var $new_action_tag = $default_action_tag.clone();
@@ -38,7 +52,7 @@ $(document).ready(function() {
         $cols.filter(isDefaultLabelColumn).text(tag_name);
 
         // Column 3: updating action tag description.
-        $cols.last().html(descr);
+        $cols.last().html('').append(descr); //html(descr);
 
         // Placing new action tag.
         $new_action_tag.insertAfter($default_action_tag);
