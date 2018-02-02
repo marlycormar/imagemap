@@ -12,7 +12,7 @@ use Form;
 Use Stanford\Utility\ActionTagHelper;
 
 /**
- * ExternalModule class for Pain Map.
+ * ExternalModule class for Image Map.
  */
 class ExternalModule extends AbstractExternalModule {
 
@@ -24,14 +24,26 @@ class ExternalModule extends AbstractExternalModule {
     function redcap_every_page_top($project_id) {
         if (PAGE == 'Design/online_designer.php' && $project_id) {
 
-            //TODO:  CLean up this help stuff and potentially recommend the question type and data-dictionary options
-            $help = "Converts a Text, Radio, or Checkbox Box field into one of the following clickable images:";
-            foreach ($this->getImageMapParams() as $map => $params) {
-                $help .= "<br><dt class='imagemap'>" . $map . "</dt><dd class='imagemap'>".$params['desc']."</dd>";
-            };
             echo "<script>var imageMapEM = imageMapEM || {};</script>";
-            echo "<script>imageMapEM.maps = " . json_encode($help) . ";</script>";
-            echo "<style>dt.imagemap { display: inline-block; width: 180px; }  dd.imagemap { display: inline; }</style>";
+            echo "<script>imageMapEM.helpUrl = " . json_encode($this->getUrl('documentation.php')) . ";</script>";
+            echo "<script>imageMapEM.maps = " . json_encode($this->getImageMapParams()) . ";</script>";
+            echo "
+                <style>
+                    span.imagemap {
+                        margin-right: 5px;
+                        overflow-wrap: normal;
+                        word-wrap: normal;
+                    }
+
+                    div.imagemap-container {
+                        overflow-wrap: normal;
+                        -ms-hyphens: auto;
+                        -moz-hyphens: auto;
+                        -webkit-hyphens: auto;
+                        hyphens: auto;
+                    }
+                </style>
+             ";
 
             $this->includeJs('js/helper.js');
         }
@@ -65,19 +77,27 @@ class ExternalModule extends AbstractExternalModule {
                 continue;
             }
 
+            // $row = $this->getDefaultConfig($display_mode);
             $row = $this->getImageMapParams($display_mode);
-            $row['field'] = $field_name;
 
-            $dir = $this->getModulePath();
+            if (empty($row)) {
+                // The specified imagemap is not defined
+            } else {
+                // Add the imagemap to the settings
+                $row['field'] = $field_name;
 
-            $b64 = base64_encode(file_get_contents($dir . $row['image']));
-            $src = "data:image/png;base64,$b64";
-            $row['src'] = $src;
+                $dir = $this->getModulePath();
 
-            $row['areas'] = file_get_contents($dir .  $row['map']);
-            $row['type'] = $field_info['element_type'];
+                $b64 = base64_encode(file_get_contents($dir . $row['image']));
 
-            $settings[] = $row;
+                $src = "data:image/png;base64,$b64";
+                $row['src'] = $src;
+
+                $row['areas'] = file_get_contents($dir .  $row['map']);
+                $row['type'] = $field_info['element_type'];
+
+                $settings[] = $row;
+            }
         }
 
         if (empty($settings)) {
@@ -111,7 +131,7 @@ class ExternalModule extends AbstractExternalModule {
      * @param $image_map
      * @return mixed
      */
-    protected function getImageMapParams($image_map = null) {
+    public function getImageMapParams($image_map = null) {
 
         //TODO: Support having custom-maps defined via the EM config
         $image_maps = $this->getConfig()['default-image-maps'];

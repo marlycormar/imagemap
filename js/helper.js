@@ -23,7 +23,22 @@ $(document).ready(function() {
         }
 
         var tag_name = '@IMAGEMAP';
-        var descr = imageMapEM.maps;
+
+        // Create the help text
+        var descr = $('<div></div>')
+            .addClass('imagemap-container')
+            .html('Converts a radio, checkbox, or text field into a clickable image. For example, to display a male body '
+                + 'with clickable body parts, you may use <nobr>@IMAGEMAP=PAINMAP_MALE</nobr>.  For a full list of available '
+                + 'image maps and details about options, please reference the:<br>');
+        var btn = $('<a></a>')
+            .attr('href', imageMapEM.helpUrl)
+            .attr('target', '_BLANK')
+            .append(
+                $('<div></div>')
+                    .addClass('btn btn-xs btn-primary')
+                    .text('Full Documentation')
+            )
+            .appendTo(descr);
 
         // Creating a new action tag row.
         var $new_action_tag = $default_action_tag.clone();
