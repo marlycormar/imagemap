@@ -34,7 +34,7 @@ class ExternalModule extends AbstractExternalModule {
                         overflow-wrap: normal;
                         word-wrap: normal;
                     }
-                    
+
                     div.imagemap-container {
                         overflow-wrap: normal;
                         -ms-hyphens: auto;

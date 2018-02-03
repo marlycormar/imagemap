@@ -52,7 +52,7 @@ $(document).ready(function() {
         $cols.filter(isDefaultLabelColumn).text(tag_name);
 
         // Column 3: updating action tag description.
-        $cols.last().html('').append(descr); //html(descr);
+        $cols.last().html(descr);
 
         // Placing new action tag.
         $new_action_tag.insertAfter($default_action_tag);

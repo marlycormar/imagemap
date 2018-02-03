@@ -1,9 +1,9 @@
 # REDCap module: Image Map
-This REDCap module improves the survey participants experience by providing an easy way to indicate painful body parts as well as levels of pain. Such improvement is achieved by allowing the user to select the image representing the user's current pain level or by clicking predetermined regions in a diagram of the human body.
+This REDCap module replaces an input, radio, or checkbox field with an image that users can interact with to select one or more options.  Specific applications include a body map (the over 70 body regions) and a smile scale from 1-7 with facial expressions. Future versions will allow admins and users to add additional maps via the module configuration. The module is tied to questions via the @IMAGEMAP action tag and the name of one of the pre-defined image maps.  e.g. @IMAGEMAP=PAINMAP_FEMALE
 
 
 ## Prerequisites
-- REDCap >= 8.0.0 (for versions < 8.0.0, [REDCap Modules](https://github.com/vanderbilt/redcap-external-modules) is required).
+- REDCap >= 8.0.3 (for versions < 8.0.3, [REDCap Modules](https://github.com/vanderbilt/redcap-external-modules) is required).
 
 
 ## Easy Installation
