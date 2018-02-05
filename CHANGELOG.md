@@ -2,9 +2,18 @@
 All notable changes to the Imagemap module will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [1.1.1] - TBD
-### BugFix
+## [1.2.0] - 2018-02-05
+### Added
+- Add image maps from Bas de Veer (Andy Martin)
+- Add an example data dictionary instrument to illustrate how it works (Andy Martin)
+- Add documentation link (Andy Martin)
+
+## Changed
 - Fixed mapping issue between area map and data dictionary for painmap_male/female (Andy Martin)
+- Fixed issue with mapping of female bodymap and example.zip (Andy Martin)
+- Realign coordinates on female front mid-body with the proper labels (Philip Chase)
+- Fixed bug for selecting checkbox/radio options by label (Andy Martin)
+
 
 ## [1.1.0] - 2018-01-31
 ### Added
