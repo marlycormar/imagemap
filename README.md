@@ -1,9 +1,9 @@
 # REDCap module: Image Map
-This REDCap module improves the survey participants experience by providing an easy way to indicate painful body parts as well as levels of pain. Such improvement is achieved by allowing the user to select the image representing the user's current pain level or by clicking predetermined regions in a diagram of the human body.
+This REDCap module replaces an input, radio, or checkbox field with an image that users can interact with to select one or more options.  Specific applications include a body map (the over 70 body regions), a smile scale from 1-7 with facial expressions, and 3 representations of teeth and teeth surfaces. Future versions will allow admins and users to add additional maps via the module configuration. The module is tied to questions via the @IMAGEMAP action tag and the name of one of the pre-defined image maps.  e.g. @IMAGEMAP=PAINMAP_FEMALE
 
 
 ## Prerequisites
-- REDCap >= 8.0.0 (for versions < 8.0.0, [REDCap Modules](https://github.com/vanderbilt/redcap-external-modules) is required).
+- REDCap >= 8.0.3 (for versions < 8.0.3, [REDCap Modules](https://github.com/vanderbilt/redcap-external-modules) is required).
 
 
 ## Easy Installation
@@ -30,15 +30,32 @@ This module defines a new action tag: `@IMAGEMAP`. The possible values for this 
 
 ![SMILE_SCALE](./img/smile_scale.png)
 
+**SINGLE_TOOTH**
+
+![SINGLE_TOOTH](./img/single_tooth.png)
+
+**TEETH_SURFACE**
+
+![TEETH_SURFACE](./img/teeth_5_surface.png)
+
+**TEETH**
+
+![TEETH](./img/teeth_simple.png)
+
+
 
 ## Usage
 To display one of the images above in a survey or data entry form, add a new field of type **Text Box** and include one of the following options in the **Action Tags / Field Annotation (optional)** field:
 
-    @IMAGEMAP=PAINMAP_MALE 
+    @IMAGEMAP=PAINMAP_MALE
     @IMAGEMAP=PAINMAP_FEMALE
     @IMAGEMAP=SMILE_SCALE
+    @IMAGEMAP=SINGLE_TOOTH
+    @IMAGEMAP=TEETH_SURFACE
+    @IMAGEMAP=TEETH
+    @IMAGEMAP=BEES
 
-Each body part selected is associated with a key, for example the "Ankle (front-left)" of the female body diagram is linked to the key "f34". To find a particular key for a body part, please refer to the html files (map files) located in the folder `maps`. After selecting multiple body parts, the field containing the action tag `@IMAGEMAP` will have as value a string of comma-separated keys, e.g. "f36,f17,f18,f21". Similarly, if using the faces diagram, the field containing the action tag (i.e. `@IMAGEMAP=SMILE_SCALE`) will have the value corresponding to the face clicked, which ranges from 1 to 7.
+Each region of an image is associated with a key, for example the "Ankle (front-left)" of the female body diagram is linked to the key "f34". To find a particular key for a body part, please refer to the html files (map files) located in the folder `maps`. After selecting multiple body parts, the field containing the action tag `@IMAGEMAP` will have as value a string of comma-separated keys, e.g. "f36,f17,f18,f21". Similarly, if using the faces diagram, the field containing the action tag (i.e. `@IMAGEMAP=SMILE_SCALE`) will have the value corresponding to the face clicked, which ranges from 1 to 7.
 
 
 ## Acknowledgements

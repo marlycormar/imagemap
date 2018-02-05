@@ -170,23 +170,29 @@ imageMapEM.render = function(params) {
     // Load saved values
     imageMapEM.loadAreaList(params.field);
 
-    // If bound to checkbox, capture checkbox clicks and reflect them in the imageMap
-    $('input[type=checkbox]', tr).bind('click', function() {
+    // If bound to a checkbox, handle checking the checkbox inputs directly to update the map
+    $('input[type=checkbox]', tr).parent().bind('click', function() {
         // Prevent this code from happening twice when the event is fired from a click
         // on the imageMap
         if(event.isTrusted) {
+            // imageMapEM.log(this, event);
             var tr = $(this).closest('tr');
             //imageMapEM.log(tr);
+            var div = $(this).closest('div');
             var field_name = $(tr).attr('sq_id');
             var img = $('img[field="'+field_name+'"]', tr).not(".mapster_el");
             //imageMapEM.log(img);
-            var code = $(this).attr('code');
+            var checkbox = $('input[type=checkbox]', div);
+            // imageMapEM.log(checkbox);
+            var code = checkbox.attr('code');
             //imageMapEM.log(code);
-            var checked = $(this).is(":checked");
+            var checked = checkbox.is(":checked");
             //imageMapEM.log(checked);
             $(img).mapster('set',checked,code);
         }
     });
+
+
 
     // If bound to radio, capture radio changes and update imageMap
     $('input[type=radio]', tr).bind('click', function() {
