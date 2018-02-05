@@ -2,6 +2,10 @@
 All notable changes to the Imagemap module will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.1.1] - TBD
+### BugFix
+- Fixed mapping issue between area map and data dictionary for painmap_male/female (Andy Martin)
+
 ## [1.1.0] - 2018-01-31
 ### Added
 - Rename to 'imagemap' (Andy Martin)
