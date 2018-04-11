@@ -1,7 +1,7 @@
 {
     "name": "Image Map",
     "namespace": "ImageMap\\ExternalModule",
-    "description": "This REDCap module replaces an input, radio, or checkbox field with an image that users can interact with to select one or more options. Specific applications include a body map (the over 70 body regions), a smile scale from 1-7 with facial expressions, and 3 representations of teeth and teeth surfaces. Future versions will allow admins and users to add additional maps via the module configuration.  It is tied to questions via custom action-tags:<br> <div style='color:red;'>&nbsp;&nbsp;@IMAGEMAP = PAINMAP_MALE<br> &nbsp;&nbsp;@IMAGEMAP = PAINMAP_FEMALE<br> &nbsp;&nbsp;@IMAGEMAP = SMILE_SCALE<br> &nbsp;&nbsp;@IMAGEMAP = SINGLE_TOOTH<br> &nbsp;&nbsp;@IMAGEMAP = TEETH_SURFACE<br> &nbsp;&nbsp;@IMAGEMAP = TEETH</div><br>See the complete <b><a href='https://github.com/ctsit/imagemap' target='_blank'>documentation</a></b> at <a href='https://github.com/ctsit/imagemap' target='_blank'>https://github.com/ctsit/imagemap</a>.",
+    "description": "This module replaces an input, radio, or checkbox field with an image that users can interact with to select one or more options. Specific applications include a body map (the over 70 body regions), a smile scale from 1-7 with facial expressions, and 3 representations of teeth and teeth surfaces. It is tied to questions via the custom action-tag @IMAGEMAP which can be set to any of the following values PAINMAP_MALE, PAINMAP_FEMALE, SMILE_SCALE, SINGLE_TOOTH, TEETH_SURFACE, or TEETH.",
     "permissions": [
         "redcap_every_page_top"
     ],

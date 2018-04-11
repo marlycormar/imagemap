@@ -2,6 +2,13 @@
 All notable changes to the Imagemap module will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+
+## [1.2.1] - 2018-04-11
+### Changed
+- Reduce config.json description (Marly Cormar)
+- minor updates to attributions (Andy Martin)
+
+
 ## [1.2.0] - 2018-02-05
 ### Added
 - Add image maps from Bas de Veer (Andy Martin)

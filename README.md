@@ -59,6 +59,6 @@ Each region of an image is associated with a key, for example the "Ankle (front-
 
 
 ## Acknowledgements
-The original body was devised by Drs. Ming-Chih J Kao and Professor Sean Mackey at Stanford University as part of [CHOIR](choir.stanford.edu).  The imagemap plugin/hook was written at Stanford by Andrew Martin and converted to an external module in collaboration with the great folks at CTS-IT - University of Florida.
+The original body was devised by Dr. Ming-Chih J Kao and Professor Sean Mackey at Stanford University as part of [CHOIR](choir.stanford.edu).  The imagemap plugin/hook was written at Stanford by Andrew Martin and converted to an external module in collaboration with CTS-IT - University of Florida.  The odontogram maps were contributed by Bas de Veer and collaborators at ITHS.
 
-Use of the 'bodymap' images requires that the CHOIR attribution remains in tact.
+Use of the 'bodymap' images requires that the CHOIR attribution remains intact.
