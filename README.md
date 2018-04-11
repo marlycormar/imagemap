@@ -1,4 +1,4 @@
-# REDCap module: Image Map
+w# REDCap module: Image Map
 This REDCap module replaces an input, radio, or checkbox field with an image that users can interact with to select one or more options.  Specific applications include a body map (the over 70 body regions), a smile scale from 1-7 with facial expressions, and 3 representations of teeth and teeth surfaces. Future versions will allow admins and users to add additional maps via the module configuration. The module is tied to questions via the @IMAGEMAP action tag and the name of one of the pre-defined image maps.  e.g. @IMAGEMAP=PAINMAP_FEMALE
 
 
@@ -59,6 +59,6 @@ Each region of an image is associated with a key, for example the "Ankle (front-
 
 
 ## Acknowledgements
-The original body was devised by Drs. Ming-Chih J Kao and Professor Sean Mackey at Stanford University as part of [CHOIR](choir.stanford.edu).  The imagemap plugin/hook was written at Stanford by Andrew Martin and converted to an external module in collaboration with the great folks at CTS-IT - University of Florida.
+The original body was devised by Dr. Ming-Chih J Kao and Professor Sean Mackey at Stanford University as part of [CHOIR](choir.stanford.edu).  The imagemap plugin/hook was written at Stanford by Andrew Martin and converted to an external module in collaboration with CTS-IT - University of Florida.  The odontogram maps were contributed by Bas de Veer and collaborators at ITHS.
 
-Use of the 'bodymap' images requires that the CHOIR attribution remains in tact.
+Use of the 'bodymap' images requires that the CHOIR attribution remains intact.
