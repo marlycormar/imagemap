@@ -1,4 +1,4 @@
-w# REDCap module: Image Map
+# REDCap module: Image Map
 This REDCap module replaces an input, radio, or checkbox field with an image that users can interact with to select one or more options.  Specific applications include a body map (the over 70 body regions), a smile scale from 1-7 with facial expressions, and 3 representations of teeth and teeth surfaces. Future versions will allow admins and users to add additional maps via the module configuration. The module is tied to questions via the @IMAGEMAP action tag and the name of one of the pre-defined image maps.  e.g. @IMAGEMAP=PAINMAP_FEMALE
 
 
