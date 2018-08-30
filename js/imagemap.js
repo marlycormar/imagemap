@@ -36,12 +36,11 @@ imageMapEM.log = function() {
 
 imageMapEM.start = function() {
     $(function(){
-        //imageMapEM.log (imageMapLibrary);
 
         // Render each imagemap
         $.each(imageMapEM.settings, function(index, value) {
-            //imageMapEM.log ('index: ' + index);
-            //imageMapEM.log (value);
+            // imageMapEM.log ('index: ' + index);
+            // imageMapEM.log (value);
             imageMapEM.render(value);
         });
 
