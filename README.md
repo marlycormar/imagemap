@@ -42,7 +42,13 @@ This module defines a new action tag: `@IMAGEMAP`. The possible values for this 
 
 ![TEETH](./img/teeth_simple.png)
 
+**PI-RADS**
 
+![TEETH](./img/pirads.png)
+
+**BEES (BONUS)**
+
+![BEES](./img/bees.png)
 
 ## Usage
 To display one of the images above in a survey or data entry form, add a new field of type **Text Box** and include one of the following options in the **Action Tags / Field Annotation (optional)** field:
@@ -53,6 +59,7 @@ To display one of the images above in a survey or data entry form, add a new fie
     @IMAGEMAP=SINGLE_TOOTH
     @IMAGEMAP=TEETH_SURFACE
     @IMAGEMAP=TEETH
+    @IMAGEMAP=PIRADS
     @IMAGEMAP=BEES
 
 Each region of an image is associated with a key, for example the "Ankle (front-left)" of the female body diagram is linked to the key "f34". To find a particular key for a body part, please refer to the html files (map files) located in the folder `maps`. After selecting multiple body parts, the field containing the action tag `@IMAGEMAP` will have as value a string of comma-separated keys, e.g. "f36,f17,f18,f21". Similarly, if using the faces diagram, the field containing the action tag (i.e. `@IMAGEMAP=SMILE_SCALE`) will have the value corresponding to the face clicked, which ranges from 1 to 7.
