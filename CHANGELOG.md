@@ -2,6 +2,15 @@
 All notable changes to the Imagemap module will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.3.0] - 2018-08-30
+### Added
+- Include new PIRADS, PAINMAP_MALE_NO_ALT, and PAINMAP_FEMALE_NO_ALT imagemaps (Andy Martin)
+
+
+## [1.2.2] - 2018-08-30
+### Changed
+- Fixed issue #14 'Module does not work in 8.7.X (bootstrap 4 and jquery3)' (Marly Cormar)
+
 
 ## [1.2.1] - 2018-04-11
 ### Changed
