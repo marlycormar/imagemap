@@ -9,6 +9,7 @@ This REDCap module replaces an input, radio, or checkbox field with an image tha
 ## Easy Installation
 - Obtain this module from the Consortium [REDCap Repo] (https://redcap.vanderbilt.edu/consortium/modules/index.php) from the control center.
 
+
 ## Manual Installation
 - Clone this repo into `<redcap-root>/modules/imagemap_v0.0`.
 - Go to **Control Center > External Modules** and enable Pain Map.
@@ -66,6 +67,7 @@ Each region of an image is associated with a key, for example the "Ankle (front-
 
 
 ## Acknowledgements
-The original body was devised by Dr. Ming-Chih J Kao and Professor Sean Mackey at Stanford University as part of [CHOIR](choir.stanford.edu).  The imagemap plugin/hook was written at Stanford by Andrew Martin and converted to an external module in collaboration with CTS-IT - University of Florida.  The odontogram maps were contributed by Bas de Veer and collaborators at ITHS.
-
-Use of the 'bodymap' images requires that the CHOIR attribution remains intact.
+ * The original body was devised by Dr. Ming-Chih J Kao and Professor Sean Mackey at Stanford University as part of [CHOIR](choir.stanford.edu).  Use of the 'bodymap' images requires that the CHOIR attribution remains intact.
+ * The imagemap plugin/hook was written at Stanford by Andrew Martin and converted to an external module in collaboration with CTS-IT - University of Florida.  
+ * The odontogram maps were contributed by Bas de Veer and collaborators at the ITHS and Christy McKinney at the University of Washington and Seattle Children’s Research Institute.
+ * The PIRADS images were contributed by Dr. Richard Fan from Stanford University.
