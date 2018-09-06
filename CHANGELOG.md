@@ -2,6 +2,13 @@
 All notable changes to the Imagemap module will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.3.1] - 2018-09-06
+### Changed
+- Adding attribution for PIRADS images to Dr. Fan (Andrew Martin)
+- Update attribution for ITHS at request of Bas. (Andrew Martin)
+- Make the description text smaller so as to be more compaitble with other modules when enabling/disabling EMs. (Andrew Martin)
+
+
 ## [1.3.0] - 2018-08-30
 ### Added
 - Include new PIRADS, PAINMAP_MALE_NO_ALT, and PAINMAP_FEMALE_NO_ALT imagemaps (Andy Martin)
