@@ -179,6 +179,18 @@
             "options": "1,2,3,4,5,6,7,8,9,10",
             "data_dict_default": "1,1 | 2,2 | 3,3 | 4,4 | 5,5 | 6,6 | 7,7 | 8,8",
             "fillColor": "00aa00"
-        }
+        },
+        "RHEUMATOID_MAN": {
+            "name": "rheumatoid_man",
+            "alt": "Rheumatoid Man",
+            "desc": "Rheumatoid man for documenting joint counts in Rheumatological disease",
+            "options": "f01,f02,f03,f04,f05,f06,f07,f08,f09,f10,f11,f12,f13,f14,f15,f16,f17,f18,f19,f20,f21,f22,f23,f24,f25,f26,f27,f28,f29,f30,f31,f32,f33,f34,f35,f36,f37,f38,f39,f40,f41,f42,f43,f44,f45,f46,f47,f48,f49,f50,f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61,f62,f63,f64,f65,f66,f67,f68",
+            "data_dict_default": "f01, Left Temporomandibular | f02, Right Temporomandibular | f03, Left Sternoclavicular | f04, Right Sternoclavicular | f05, Left Acromioclavicular | f06, Right Acromioclavicular | f07, Left Shoulder | f08, Right Shoulder | f09, Left Elbow | f10, Right Elbow | f11, Left Wrist | f12, Right Wrist | f13, Left Thumb Carpometacarpal | f14, Right Thumb Carpometacarpal | f15, Left Thumb Metacarpal | f16, Right Thumb Metacarpal | f17, Left Thumb Interphalangeal | f18, Right Thumb Interphalangeal | f19, Left Index MCP | f20, Left Index PIP | f21, Left Index DIP | f22, Left Middle MCP | f23, Left Middle PIP | f24, Left Middle DIP | f25, Left Ring MCP | f26, Left Ring PIP | f27, Left Ring DIP | f28, Left Pinky MCP | f29, Left Pinky PIP | f30, Left Pinky DIP | f31, Right Index MCP | f32, Right Index PIP | f33, Right Index DIP | f34, Right Middle MCP | f35, Right Middle PIP | f36, Right Middle DIP | f37, Right Ring MCP | f38, Right Ring PIP | f39, Right Ring DIP | f40, Right Pinky MCP | f41, Right Pinky PIP | f42, Right Pinky DIP | f43, Left Hip | f44, Right Hip | f45, Left Knee | f46, Right Knee | f47, Left Ankle | f48, Right Ankle | f49, Left Hallux MTP | f50, Left Hallux PIP | f51, Left Index Toe MTP | f52, Left Index Toe PIP | f53, Left Middle Toe MTP | f54, Left Middle Toe PIP | f55, Left Ring Toe MTP | f56, Left Ring Toe PIP | f57, Left Pinky Toe MTP | f58, Left Pinky Toe PIP | f59, Right Hallux MTP | f60, Right Hallux PIP | f61, Right Index Toe MTP | f62, Right Index Toe PIP | f63, Right Middle Toe MTP | f64, Right Middle Toe PIP | f65, Right Ring Toe MTP | f66, Right Ring Toe PIP | f67, Right Pinky Toe MTP | f68, Right Pinky Toe PIP",
+            "image": "img/rheumatoid_man.png",
+            "width": 720,
+            "height": 1156,
+            "hideInput": true,
+            "map": "maps/rheumatoid_man_map.html"
+        },
     }
 }
