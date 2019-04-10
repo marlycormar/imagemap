@@ -1,5 +1,5 @@
 # REDCap module: Image Map
-This REDCap module replaces an input, radio, or checkbox field with an image that users can interact with to select one or more options.  Specific applications include a body map (the over 70 body regions), a smile scale from 1-7 with facial expressions, and 3 representations of teeth and teeth surfaces. Future versions will allow admins and users to add additional maps via the module configuration. The module is tied to questions via the @IMAGEMAP action tag and the name of one of the pre-defined image maps.  e.g. @IMAGEMAP=PAINMAP_FEMALE
+This REDCap module replaces an input, radio, or checkbox field with an image that users can interact with to select one or more options.  Specific applications include a body map (the over 70 body regions), a smile scale from 1-7 with facial expressions, and 3 representations of teeth and teeth surfaces. Future versions will allow admins and users to add additional maps via the module configuration. The module is tied to questions via the `@IMAGEMAP` action tag and the name of one of the pre-defined image maps.  e.g. `@IMAGEMAP=PAINMAP_FEMALE`
 
 
 ## Prerequisites
@@ -7,7 +7,7 @@ This REDCap module replaces an input, radio, or checkbox field with an image tha
 
 
 ## Easy Installation
-- Obtain this module from the Consortium [REDCap Repo] (https://redcap.vanderbilt.edu/consortium/modules/index.php) from the control center.
+- Obtain this module from the Consortium [REDCap Repo](https://redcap.vanderbilt.edu/consortium/modules/index.php) from the control center.
 
 
 ## Manual Installation
@@ -47,9 +47,14 @@ This module defines a new action tag: `@IMAGEMAP`. The possible values for this 
 
 ![TEETH](./img/pirads.png)
 
+**RHEUMATOID_MAN**
+
+![RHEUMATOID_MAN](./img/rheumatoid_man.png)
+
 **BEES (BONUS)**
 
 ![BEES](./img/bees.png)
+
 
 ## Usage
 To display one of the images above in a survey or data entry form, add a new field of type **Text Box** and include one of the following options in the **Action Tags / Field Annotation (optional)** field:
@@ -61,6 +66,7 @@ To display one of the images above in a survey or data entry form, add a new fie
     @IMAGEMAP=TEETH_SURFACE
     @IMAGEMAP=TEETH
     @IMAGEMAP=PIRADS
+    @IMAGEMAP=RHEUMATOID_MAN
     @IMAGEMAP=BEES
 
 Each region of an image is associated with a key, for example the "Ankle (front-left)" of the female body diagram is linked to the key "f34". To find a particular key for a body part, please refer to the html files (map files) located in the folder `maps`. After selecting multiple body parts, the field containing the action tag `@IMAGEMAP` will have as value a string of comma-separated keys, e.g. "f36,f17,f18,f21". Similarly, if using the faces diagram, the field containing the action tag (i.e. `@IMAGEMAP=SMILE_SCALE`) will have the value corresponding to the face clicked, which ranges from 1 to 7.
