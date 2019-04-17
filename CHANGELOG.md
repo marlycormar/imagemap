@@ -2,6 +2,20 @@
 All notable changes to the Imagemap module will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+
+## [1.4.0] - 2019-04-17
+### Changed
+- Aesthetic changes to the documentation. (Marly Cormar)
+- Update text about Rheumatoid Man (Philip Chase)
+- Update docs and config.json for Rheumatoid man and example instrument (Philip Chase)
+- Update example instrument and remove duplication. (Marly Cormar)
+- Include example for RHEUMATOID_MAN. (Marly Cormar)
+- Document new imagemap RHEUMATOID_MAN. (Marly Cormar)
+- Include rheumatoid_man in the config.json (BlaineVlan)
+- Added Rheumatoid Man imagemap and rheumatoid_man_map.html (BlaineVlan)
+- Add small formatting changes (Will Beasley)
+
+
 ## [1.3.1] - 2018-09-06
 ### Changed
 - Adding attribution for PIRADS images to Dr. Fan (Andrew Martin)
