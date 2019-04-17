@@ -49,7 +49,7 @@ This module defines a new action tag: `@IMAGEMAP`. The possible values for this 
 
 **RHEUMATOID_MAN**
 
-Note that view of Rheumatoid man is Anterior.
+The Rheumatoid man imagemap tool reflects disease activity and progression by recording joint involvement. It was designed for use in paediatric rheumatology, but can be used wherever joint mapping is required.  The Rheumatoid man is in anatomical position, which means a frontal depiction, but not mirrored. i.e., the left hand would be depicted on the right side of the screen.
 
 ![RHEUMATOID_MAN](./img/rheumatoid_man.png)
 
@@ -82,7 +82,7 @@ This project includes an [Example Instrument](docs/Instrument\ Example.zip) that
 
 ## Acknowledgements
  * The original body was devised by Dr. Ming-Chih J Kao and Professor Sean Mackey at Stanford University as part of [CHOIR](choir.stanford.edu).  Use of the 'bodymap' images requires that the CHOIR attribution remains intact.
- * The imagemap plugin/hook was written at Stanford by Andrew Martin and converted to an external module in collaboration with CTS-IT - University of Florida.  
+ * The imagemap plugin/hook was written at Stanford by Andrew Martin and converted to an external module in collaboration with CTS-IT - University of Florida.
  * The odontogram maps were contributed by Bas de Veer and collaborators at the ITHS and Christy McKinney at the University of Washington and Seattle Children’s Research Institute.
  * The PIRADS images were contributed by Dr. Richard Fan from Stanford University.
- * Rheumatoid Man was contributed by Blaine Vlantis.
+ * Rheumatoid Man was contributed by Blaine Vlantis of the University of Cape Town.
