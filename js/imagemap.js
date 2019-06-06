@@ -199,7 +199,7 @@ imageMapEM.render = function(params) {
         //imageMapEM.log(tr + ' clicked');
         var field_name = $(tr).attr('sq_id');
         //imageMapEM.log(field_name);
-        loadAreaList(field_name);
+        imageMapEM.loadAreaList(field_name);
     });
 
     // Bind to reset button
