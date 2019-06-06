@@ -2,6 +2,10 @@
 All notable changes to the Imagemap module will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.4.1] - 2019-06-06
+### Changed
+- Remove dangling map tag. (Marly Cormar)
+
 
 ## [1.4.0] - 2019-04-17
 ### Changed
