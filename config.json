@@ -179,6 +179,18 @@
             "options": "1,2,3,4,5,6,7,8,9,10",
             "data_dict_default": "1,1 | 2,2 | 3,3 | 4,4 | 5,5 | 6,6 | 7,7 | 8,8",
             "fillColor": "00aa00"
-        }
+        },
+        "5_FACE_PAINMAP": {
+            "name": "5_face_painmap",
+            "alt": "5 Face Painmap",
+            "image": "img/5_face_painscale.png",
+            "width": 737,
+            "height": 100,
+            "map": "maps/5_face_painmap.html",
+            "singleSelect": true,
+            "hideInput": true,
+            "options": "1,2,3,4,5",
+            "data_dict_default": "1,1 | 2,2 | 3,3 | 4,4 | 5,5",
+            "fillColor": "00aa00"
     }
 }
