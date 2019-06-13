@@ -191,6 +191,20 @@
             "height": 650,
             "hideInput": true,
             "map": "maps/rheumatoid_man_map.html"
+        },
+        "5_FACE_PAINMAP": {
+            "name": "5_face_painmap",
+            "alt": "5 Face Painmap",
+            "desc": "A smile scale from Happy (1) to Sad (5)",
+            "image": "img/5_face_painscale.png",
+            "width": 737,
+            "height": 100,
+            "map": "maps/5_face_painmap.html",
+            "singleSelect": true,
+            "hideInput": true,
+            "options": "1,2,3,4,5",
+            "data_dict_default": "1,1 | 2,2 | 3,3 | 4,4 | 5,5",
+            "fillColor": "00aa00"
         }
     }
 }
