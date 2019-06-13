@@ -22,13 +22,13 @@ This module defines a new action tag: `@IMAGEMAP`. The possible values for this 
 
 **`PAINMAP_MALE`**
 
-Representation of a generic male body.
+Representation of a generic male body.  
 ![PAINMAP_MALE](./img/painmap_male.png)
 
 
 **`PAINMAP_FEMALE`**
 
-Representation of a generic female body.
+Representation of a generic female body.  
 ![PAINMAP_FEMALE](./img/painmap_female.png)
 
 
@@ -64,7 +64,7 @@ Representation of a generic female body.
 
 **`RHEUMATOID_MAN`**
 
-The Rheumatoid man imagemap tool reflects disease activity and progression by recording joint involvement. It was designed for use in paediatric rheumatology, but can be used wherever joint mapping is required.  The Rheumatoid man is in anatomical position, which means a frontal depiction, but not mirrored, i.e., the left hand would be depicted on the right side of the screen.
+The Rheumatoid man imagemap tool reflects disease activity and progression by recording joint involvement. It was designed for use in paediatric rheumatology, but can be used wherever joint mapping is required.  The Rheumatoid man is in anatomical position, which means a frontal depiction, but not mirrored, i.e., the left hand would be depicted on the right side of the screen.  
 ![RHEUMATOID_MAN](./img/rheumatoid_man.png)
 
 
