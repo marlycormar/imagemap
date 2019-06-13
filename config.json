@@ -195,6 +195,7 @@
         "5_FACE_PAINMAP": {
             "name": "5_face_painmap",
             "alt": "5 Face Painmap",
+            "desc": "A smile scale from Happy (1) to Sad (5)",
             "image": "img/5_face_painscale.png",
             "width": 737,
             "height": 100,
