@@ -19,69 +19,77 @@ This REDCap module replaces an input, radio, or checkbox field with an image tha
 ## Features included
 This module defines a new action tag: `@IMAGEMAP`. The possible values for this tag are:
 
-<hr>
-**PAINMAP_MALE**
-<hr>
-Representation of a generic male body.
+
+**`PAINMAP_MALE`**
+
+Representation of a generic male body.  
 ![PAINMAP_MALE](./img/painmap_male.png)
 
-<hr>
-**PAINMAP_FEMALE**
-<hr>
-Representation of a generic female body.
+
+**`PAINMAP_FEMALE`**
+
+Representation of a generic female body.  
 ![PAINMAP_FEMALE](./img/painmap_female.png)
 
-<hr>
-**SMILE_SCALE**
-<hr>
+
+**`SMILE_SCALE`**
+
 ![SMILE_SCALE](./img/smile_scale.png)
 
-<hr>
-**SINGLE_TOOTH**
-<hr>
+
+**`5_FACE_PAINMAP`**
+
+![5_FACE_PAINMAP](./img/5_face_painscale.png)
+
+
+**`SINGLE_TOOTH`**
+
 ![SINGLE_TOOTH](./img/single_tooth.png)
 
-<hr>
-**TEETH_SURFACE**
-<hr>
+
+**`TEETH_SURFACE`**
+
 ![TEETH_SURFACE](./img/teeth_5_surface.png)
 
-<hr>
-**TEETH**
-<hr>
+
+**`TEETH`**
+
 ![TEETH](./img/teeth_simple.png)
 
-<hr>
-**PI-RADS**
-<hr>
+
+**`PI-RADS`**
+
 ![TEETH](./img/pirads.png)
 
-<hr>
-**RHEUMATOID_MAN**
-<hr>
-The Rheumatoid man imagemap tool reflects disease activity and progression by recording joint involvement. It was designed for use in paediatric rheumatology, but can be used wherever joint mapping is required.  The Rheumatoid man is in anatomical position, which means a frontal depiction, but not mirrored, i.e., the left hand would be depicted on the right side of the screen.
+
+**`RHEUMATOID_MAN`**
+
+The Rheumatoid man imagemap tool reflects disease activity and progression by recording joint involvement. It was designed for use in paediatric rheumatology, but can be used wherever joint mapping is required.  The Rheumatoid man is in anatomical position, which means a frontal depiction, but not mirrored, i.e., the left hand would be depicted on the right side of the screen.  
 ![RHEUMATOID_MAN](./img/rheumatoid_man.png)
 
-<hr>
-**BEES (BONUS)**
-<hr>
+
+**`BEES (BONUS)`**
+
 ![BEES](./img/bees.png)
 
 
 ## Usage
 To display one of the images above in a survey or data entry form, add a new field of type **Text Box** and include one of the following options in the **Action Tags / Field Annotation (optional)** field:
 
-    @IMAGEMAP=PAINMAP_MALE
-    @IMAGEMAP=PAINMAP_FEMALE
-    @IMAGEMAP=SMILE_SCALE
-    @IMAGEMAP=SINGLE_TOOTH
-    @IMAGEMAP=TEETH_SURFACE
-    @IMAGEMAP=TEETH
-    @IMAGEMAP=PIRADS
-    @IMAGEMAP=RHEUMATOID_MAN
-    @IMAGEMAP=BEES
+```
+@IMAGEMAP=PAINMAP_MALE
+@IMAGEMAP=PAINMAP_FEMALE
+@IMAGEMAP=SMILE_SCALE
+@IMAGEMAP=5_FACE_PAINMAP
+@IMAGEMAP=SINGLE_TOOTH
+@IMAGEMAP=TEETH_SURFACE
+@IMAGEMAP=TEETH
+@IMAGEMAP=PIRADS
+@IMAGEMAP=RHEUMATOID_MAN
+@IMAGEMAP=BEES
+```
 
-Each region of an image is associated with a key, for example the "Ankle (front-left)" of the female body diagram is linked to the key "f34". To find a particular key for a body part, please refer to the html files (map files) located in the folder `maps`. After selecting multiple body parts, the field containing the action tag `@IMAGEMAP` will have as value a string of comma-separated keys, e.g. "f36,f17,f18,f21". Similarly, if using the faces diagram, the field containing the action tag (i.e. `@IMAGEMAP=SMILE_SCALE`) will have the value corresponding to the face clicked, which ranges from 1 to 7.
+Each region of an image is associated with a key, for example the "Ankle (front-left)" of the female body diagram is linked to the key "f34". To find a particular key for a body part, please refer to the html files (map files) located in the folder `maps`. After selecting multiple body parts, the field containing the action tag `@IMAGEMAP` will have as value a string of comma-separated keys, e.g. "f36,f17,f18,f21". Similarly, if using the faces diagram, the field containing the action tag (e.g. `@IMAGEMAP=SMILE_SCALE`) will have the value corresponding to the face clicked.
 
 
 ## Testing instrument
