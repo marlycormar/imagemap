@@ -39,7 +39,7 @@ Representation of a generic female body.
 
 **`5_FACE_PAINMAP`**
 
-![5_FACE_PAINMAP](./img/5_face_painscale.png)
+![5_FACE_PAINMAP](./img/5_face_painmap.png)
 
 
 **`SINGLE_TOOTH`**
