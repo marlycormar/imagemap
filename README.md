@@ -70,6 +70,7 @@ The Rheumatoid man imagemap tool reflects disease activity and progression by re
 
 **`VA_CHART`**
 
+Information on the VA chart tool can be found in [section 4 of this publication](https://ieeexplore.ieee.org/document/6365167#sec4)  
 ![VA_CHART](./img/va_chart.png)
 
 
