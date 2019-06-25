@@ -209,7 +209,7 @@
         "MBODY": {
             "name": "mbody",
             "alt": "Michigan Body Map",
-            "desc": "",
+            "desc": "Michigan Body Map (MBM) reflects body areas where chronic pain may be experienced.",
             "image": "img/mbody.png",
             "width": 1152,
             "height": 856,
