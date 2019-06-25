@@ -68,6 +68,12 @@ The Rheumatoid man imagemap tool reflects disease activity and progression by re
 ![RHEUMATOID_MAN](./img/rheumatoid_man.png)
 
 
+**`VA_CHART`**
+
+Information on the VA chart tool can be found in [section 4 of this publication](https://ieeexplore.ieee.org/document/6365167#sec4)  
+![VA_CHART](./img/va_chart.png)
+
+
 **`BEES (BONUS)`**
 
 ![BEES](./img/bees.png)
@@ -86,6 +92,7 @@ To display one of the images above in a survey or data entry form, add a new fie
 @IMAGEMAP=TEETH
 @IMAGEMAP=PIRADS
 @IMAGEMAP=RHEUMATOID_MAN
+@IMAGEMAP=VA_CHART
 @IMAGEMAP=BEES
 ```
 
