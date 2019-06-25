@@ -1,5 +1,5 @@
 # REDCap module: Image Map
-This REDCap module replaces an input, radio, or checkbox field with an image that users can interact with to select one or more options.  Specific applications include a body map (with over 70 body regions), a smile scale from 1-7 with facial expressions, 3 representations of teeth and teeth surfaces, among others. See below for a complete list of current imagemaps. Future versions will allow admins and users to add additional maps via the module configuration. The module is tied to questions via the `@IMAGEMAP` action tag and the name of one of the pre-defined image maps.  e.g. `@IMAGEMAP=PAINMAP_FEMALE`.
+This REDCap module replaces an input, radio, or checkbox field with an image that users can interact with to select one or more options. Specific applications include a body map (with over 70 body regions), a smile scale from 1-7 with facial expressions, 3 representations of teeth and teeth surfaces, among others. See below for a complete list of current imagemaps. Future versions will allow admins and users to add additional maps via the module configuration. The module is tied to questions via the `@IMAGEMAP` action tag and the name of one of the pre-defined image maps.  e.g. `@IMAGEMAP=PAINMAP_FEMALE`.
 
 
 ## Prerequisites
@@ -70,8 +70,14 @@ The Rheumatoid man imagemap tool reflects disease activity and progression by re
 
 **`VA_CHART`**
 
-Information on the VA chart tool can be found in [section 4 of this publication](https://ieeexplore.ieee.org/document/6365167#sec4)  
+A 2-D emotion wheel representation of the circumplex model of affect.
 ![VA_CHART](./img/va_chart.png)
+
+
+**`MBODY`**
+
+Michigan Body Map (MBM) reflects body areas where chronic pain may be experienced.
+![MBODY](./img/mbody.png)
 
 
 **`BEES (BONUS)`**
@@ -93,6 +99,7 @@ To display one of the images above in a survey or data entry form, add a new fie
 @IMAGEMAP=PIRADS
 @IMAGEMAP=RHEUMATOID_MAN
 @IMAGEMAP=VA_CHART
+@IMAGEMAP=MBODY
 @IMAGEMAP=BEES
 ```
 
@@ -101,12 +108,14 @@ Each region of an image is associated with a key, for example the "Ankle (front-
 
 ## Testing instrument
 
-This project includes an [Example Instrument](docs/Instrument\ Example.zip) that includes everyone of these image maps. It demonstrates different methods of using these image maps.  This is suitable for testing or demonstration purposes.
+This project includes an [Example Instrument](docs/Instrument\ Example.zip) that includes each of these image maps. It demonstrates different methods of using these image maps.  This is suitable for testing or demonstration purposes.
 
 
-## Acknowledgements
- * The original body was devised by Dr. Ming-Chih J Kao and Professor Sean Mackey at Stanford University as part of [CHOIR](choir.stanford.edu).  Use of the 'bodymap' images requires that the CHOIR attribution remains intact.
+## Acknowledgements & Copyright
+ * The original body was devised by Dr. Ming-Chih J Kao and Professor Sean Mackey at Stanford University as part of [CHOIR](choir.stanford.edu). Use of the 'bodymap' images requires that the CHOIR attribution remains intact.
  * The imagemap plugin/hook was written at Stanford by Andrew Martin and converted to an external module in collaboration with CTS-IT - University of Florida.
  * The odontogram maps were contributed by Bas de Veer and collaborators at the ITHS and Christy McKinney at the University of Washington and Seattle Children’s Research Institute.
  * The PIRADS images were contributed by Dr. Richard Fan from Stanford University.
  * Rheumatoid Man was contributed by Dr. Blaine Vlantis of the University of Cape Town.
+ * VA Chart image appears in the paper ["Deep Affect Prediction in-the-Wild: Aff-Wild Database and Challenge, Deep Architectures, and Beyond"](https://link.springer.com/article/10.1007/s11263-019-01158-4) by Kollias, D., Tzirakis, P., Nicolaou, M.A. et al. For image usage, refer to [Springer's copyright information](https://link.springer.com/article/10.1007/s11263-019-01158-4#copyrightInformation).
+ * The Michigan Body Map (MBODY) image was created by the Division of Pain Research Anesthesiology of the University of Michigan. Please refer to their [website](https://medicine.umich.edu/dept/pain-research/clinical-research/michigan-body-map-mbm) for copyright information.
