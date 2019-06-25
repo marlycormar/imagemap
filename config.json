@@ -190,7 +190,7 @@
             "width": 404,
             "height": 650,
             "hideInput": true,
-            "map": "maps/rheumatoid_man_map.html"
+            "map": "maps/rheumatoid_man.html"
         },
         "5_FACE_PAINMAP": {
             "name": "5_face_painmap",
