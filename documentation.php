@@ -6,20 +6,6 @@
  */
 
 require_once APP_PATH_DOCROOT . 'ProjectGeneral/header.php';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ?>
 <style>
 
@@ -60,36 +46,27 @@ require_once APP_PATH_DOCROOT . 'ProjectGeneral/header.php';
 
     div.long {display: inline-block; overflow-x: hidden; word-break: break-all; }
 
-
-
 </style>
 
 <h3>ImageMap Documentation</h3>
 
 <p>
-    ImageMaps create a clickable image to work with or replace a traditional REDCap input field.
+    ImageMap creates a clickable image to work with or replace a traditional REDCap input field.
 </p>
 
 <h4>What field types are supported?</h4>
 <p>
-    If the imagemap uses 'singleSelect' this means that only one region can be selected at a time.  For this type of
-    map you should use a text or radio field.  The benefit of using a radio field is that you could add custom labels
-    to the selected value that would appear with piping or in exports with labels.  You MUST make sure the enumerated
-    values for your question match the options defined by the imagemap.
+    If the imagemap uses 'singleSelect' this means that only one region can be selected at a time. For this type of map you should use a text or radio field. The benefit of using a radio field is that you could add custom labels to the selected value that would appear with piping or in exports with labels. You MUST make sure the enumerated values for your question matches the options defined by the imagemap.
 </p>
 <p>
-    If, on the other hand, your map supports multi-select, then you can choose either a text or radio question type.
-    Text is simpler and multiple regions will be comma-separated in the input value.  A checkbox allows you to do
-    individual branching based upon selected regions.  For example, you could have specific questions that apply if
-    someone checks any head or neck region on the painmap.
+    If, on the other hand, your map supports multi-select, then you can choose either a text or radio question type. Text is simpler and multiple regions will be comma-separated in the input value. A checkbox allows you to do individual branching based upon selected regions. For example, you could have specific questions that apply if someone checks any head or neck region on the painmap.
 </p>
 
 <h4>Can you help me get started?</h4>
 <p>
-    The following instrument.zip file contians a number of example ImageMap options.  Simply download it and add it to your
-    project from the online designer.  You can remove the instrument at any time when you're done.
+    The following instrument zip file contains a set of examples with different imagemap options. Simply download it and add it to your project from the online designer. You can remove the instrument at any time when you're done.
 </p>
-    <a href="<?php echo $module->getUrl("docs/ImagemapExamples.zip") ?>" target="_BLANK">
+    <a href="<?php echo $module->getUrl("docs/Instrument Example.zip") ?>" target="_BLANK">
         <div class="button btn btn-primary">Download Example Instrument</div>
     </a>
 
@@ -148,16 +125,12 @@ require_once APP_PATH_DOCROOT . 'ProjectGeneral/header.php';
 
 <h4>How can I make my own images?</h4>
 <p>
-    You must have a png image file AND create a html file containing <code>area</code> tags.  An example area file is
-    below:
-<pre class="code"><?php echo htmlspecialchars( file_get_contents($module->getModulePath() .'maps/smile_scale.html', false, null, 0, 200)) ?>...</pre>
-The value for the data-key attribute will be the value stored in REDCap - either as radio/checkbox keys or in a text box.
-Currently you must submit these files to our git repo - in the future we may add the ability to insert those files
-into the External Module as parameters.
+    You must have a png image file AND create a html file containing <code>area</code> tags. An example area file is below:
+<pre class="code"><?php echo htmlspecialchars( file_get_contents($module->getModulePath() .'maps/smile_scale.html', false, null, 0, 200)) ?></pre>
+The value for the data-key attribute will be the value stored in REDCap - either as radio/checkbox keys or in a text box. Currently you must submit these files to our git repo - in the future we may add the ability to insert those files into the External Module as parameters.
 </p>
 
 <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
-
 
 <script>
     new Clipboard('.copy', {
@@ -168,8 +141,6 @@ into the External Module as parameters.
             return text;
         }
     });
-
-
 
     // $('.copy').bind('click', function() {
     //
