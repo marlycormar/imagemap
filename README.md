@@ -70,7 +70,7 @@ The Rheumatoid man imagemap tool reflects disease activity and progression by re
 
 **`VA_CHART`**
 
-A 2-D emotion wheel representation of the circumplex model of affect.
+A 2-D emotion wheel representation of the circumplex model of affect.  
 ![VA_CHART](./img/va_chart.png)
 
 
