@@ -76,7 +76,7 @@ A 2-D emotion wheel representation of the circumplex model of affect.
 
 **`MBODY`**
 
-Michigan Body Map (MBM) reflects body areas where chronic pain may be experienced.
+Michigan Body Map (MBM) reflects body areas where chronic pain may be experienced.  
 ![MBODY](./img/mbody.png)
 
 
