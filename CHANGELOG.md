@@ -2,6 +2,28 @@
 All notable changes to the Imagemap module will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+
+## [1.4.2] - 2019-06-27
+### Added
+- Add description and copyright information for the mbody and va_char imagemaps. (Marly Cormar)
+- Include image info and standarize maps. (Marly Cormar)
+- Add new imagemap va_chart and its info to the README.md (Marly Cormar)
+- Add pirads to instrument example (Kyle Chesney)
+- Add mbody image, update sample instrument, and modify config.json accordinglu. (Marly Cormar)
+- Include 5_face_painmap on the sample instrument. (Marly Cormar)
+- add description of new face painmap (Kyle Chesney)
+
+## Changed
+- Correct path to example instrument in the documentation.php and the README.md. (Marly Cormar)
+- Rename rheumatoid_man_map.html file to rheumatoid_man.html. (Marly Cormar)
+- Update 5_face_painmap image name on the README.md. (Marly Cormar)
+- Rename 5_face_painscale.png to 5_face_painmap.png to maintain module aesthetic standards. (Marly Cormar)
+- update README to show painmap from lewisa2, fix markdown formatting (Kyle Chesney)
+- create developer notes to describe state of ImageMapster use (Kyle Chesney)
+- Create 5_face_painmap.html (lewisa2)
+- Fix function call by referencing the object on which it was defined. (Marly Cormar)
+
+
 ## [1.4.1] - 2019-06-06
 ### Changed
 - Remove dangling map tag. (Marly Cormar)
