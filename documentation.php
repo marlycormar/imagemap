@@ -56,10 +56,10 @@ require_once APP_PATH_DOCROOT . 'ProjectGeneral/header.php';
 
 <h4>What field types are supported?</h4>
 <p>
-    If the imagemap uses 'singleSelect' this means that only one region can be selected at a time. For this type of map you should use a text or radio field. The benefit of using a radio field is that you could add custom labels to the selected value that would appear with piping or in exports with labels. You MUST make sure the enumerated values for your question matches the options defined by the imagemap.
+    If the imagemap uses 'singleSelect' this means that only one region can be selected at a time. For this type of map, you should use a text or radio field. The benefit of using a radio field is that you could add custom labels to the selected value that would appear with piping or in exports with labels. You MUST make sure the enumerated values for your question matches the options defined by the imagemap.
 </p>
 <p>
-    If, on the other hand, your map supports multi-select, then you can choose either a text or radio question type. Text is simpler and multiple regions will be comma-separated in the input value. A checkbox allows you to do individual branching based upon selected regions. For example, you could have specific questions that apply if someone checks any head or neck region on the painmap.
+    If, on the other hand, your map supports multi-select, then you can choose either a text or radio question type. Text is simpler, and multiple regions will be comma-separated in the input value. A checkbox allows you to do individual branching based upon selected regions. For example, you could have specific questions that apply if someone checks any head or neck region on the painmap.
 </p>
 
 <h4>Can you help me get started?</h4>
