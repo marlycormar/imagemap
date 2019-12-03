@@ -117,7 +117,7 @@ Each region of an image is associated with a key, for example, the "Ankle (front
 
 ## Testing instrument
 
-This project includes an [Example Instrument](docs/Instrument/Example.zip) that includes each of these image maps. It demonstrates different methods of using these image maps; which is suitable for testing or demonstration purposes.
+This project includes an [Example Instrument](docs/Instrument\ Example.zip) that includes each of these image maps. It demonstrates different methods of using these image maps; which is suitable for testing or demonstration purposes.
 
 
 ## Acknowledgements & Copyright
