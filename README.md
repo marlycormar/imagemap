@@ -88,8 +88,8 @@ Michigan Body Map (MBM) reflects body areas where chronic pain may be experience
 **`DO-Touch_NET-Body_colour`** and **`DO-Touch_NET-Body-grey`**
 
 DO-Touch.NET body region image map designed for use in osteopathic manipulative medicine (OMM) research.
-![DO-Touch_NET-Body_colour](/img/DO-Touch_NET-Body_colour)
-![DO-Touch_NET-Body_grey](/img/DO-Touch_NET-Body_grey)
+![DO-Touch_NET-Body_colour](/img/DO-Touch_NET-Body_colour.png)
+![DO-Touch_NET-Body_grey](/img/DO-Touch_NET-Body_grey.png)
 
 
 ## Usage
