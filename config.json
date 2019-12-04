@@ -219,6 +219,34 @@
             "data_dict_default": "0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 19, 19 | 20, 20 | 21, 21 | 22, 22 | 23, 23 | 24, 24 | 25, 25 | 26, 26 | 27, 27 | 28, 28 | 29, 29 | 30, 30 | 31, 31 | 32, 32 | 33, 33 | 34, 34 | 35, 35",
             "fillColor": "00aa00"
         },
+        "DO_TOUCH_NET_BODY_COLOUR": {
+            "name": "DO-Touch_NET-Body_Colour",
+            "alt": "DO-Touch_NET bodymap colour",
+            "desc": "Bodymap for use in Osteopathic Manipulative Treatment research in colour.",
+            "options": "01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59",
+            "data_dict_default": "01, Face (Front) | 02, Head (Front) | 03, Neck (Front) | 04, Chest-Ribs (Front) | 05, Shoulder (Front Right) | 06, Shoulder (Front Left) | 07, Upper Arm (Front Right) | 08, Upper Arm (Front Left) | 09, Elbow (Front Right) | 10, Elbow (Front Left) | 11, Forearm (Front Right) | 12, Forearm (Front Left) | 13, Wrist (Front Right) | 14, Wrist (Front Left) | 15, Hand (Front Right) | 16, Hand (Front Left) | 17, Abdomen (Front) | 18, Hips-Pelvis (Front) | 19, Thigh (Front Right) | 20, Thigh (Front Left) | 21, Knee (Front Right) | 22, Knee (Front Left) | 23, Shin-Calf (Front Right) | 24, Shin-Calf (Front Left) | 25, Ankle (Front Right) | 26, Ankle (Front Left) | 27, Foot (Front Right) | 28, Foot (Front Left) | 29, Head (Back) | 30, Neck (Back) | 31, Shoulder (Back Left) | 32, Shoulder (Back Right) | 33, Ribs (Back Left) | 34, Ribs (Back Right) | 35, Upper Back (Back) | 36, Upper Arm (Back Left) | 37, Upper Arm (Back Right) | 38, Elbow (Back Left) | 39, Elbow (Back Right) | 40, Forearm (Back Left) | 41, Forearm (Back Right) | 42, Wrist (Back Left) | 43, Wrist (Back Right) | 44, Hand (Back Left) | 45, Hand (Back Right) | 46, Lower Back (Back) | 47, Hip-Pelvis (Back Left) | 48, Hip-Pelvis (Back Right) | 49, Tailbone-Sacrum (Back) | 50, Thigh (Back Left) | 51, Thigh (Back Right) | 52, Knee (Back Left) | 53, Knee (Back Right) | 54, Shin-Calf (Back Left) | 55, Shin-Calf (Back Right) | 56, Ankle (Back Left) | 57, Ankle (Back Right) | 58, Foot (Back Left) | 59, Foot (Back Right)",
+            "image": "img/do_touch_net_body_colour.png",
+            "width": 518,
+            "height": 532,
+            "hideInput": true,
+            "singleSelect": false,
+            "fillColor": "000000",
+            "map": "maps/do_touch_net_body_colour.html"
+        },
+        "DO_TOUCH_NET_BODY_GREY": {
+            "name": "DO-Touch_NET-Body_Grey",
+            "alt": "DO-Touch_NET bodymap grey",
+            "desc": "Bodymap for use in Osteopathic Manipulative Treatment research in grey.",
+            "options": "01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59",
+            "data_dict_default": "01, Face (Front) | 02, Head (Front) | 03, Neck (Front) | 04, Chest-Ribs (Front) | 05, Shoulder (Front Right) | 06, Shoulder (Front Left) | 07, Upper Arm (Front Right) | 08, Upper Arm (Front Left) | 09, Elbow (Front Right) | 10, Elbow (Front Left) | 11, Forearm (Front Right) | 12, Forearm (Front Left) | 13, Wrist (Front Right) | 14, Wrist (Front Left) | 15, Hand (Front Right) | 16, Hand (Front Left) | 17, Abdomen (Front) | 18, Hips-Pelvis (Front) | 19, Thigh (Front Right) | 20, Thigh (Front Left) | 21, Knee (Front Right) | 22, Knee (Front Left) | 23, Shin-Calf (Front Right) | 24, Shin-Calf (Front Left) | 25, Ankle (Front Right) | 26, Ankle (Front Left) | 27, Foot (Front Right) | 28, Foot (Front Left) | 29, Head (Back) | 30, Neck (Back) | 31, Shoulder (Back Left) | 32, Shoulder (Back Right) | 33, Ribs (Back Left) | 34, Ribs (Back Right) | 35, Upper Back (Back) | 36, Upper Arm (Back Left) | 37, Upper Arm (Back Right) | 38, Elbow (Back Left) | 39, Elbow (Back Right) | 40, Forearm (Back Left) | 41, Forearm (Back Right) | 42, Wrist (Back Left) | 43, Wrist (Back Right) | 44, Hand (Back Left) | 45, Hand (Back Right) | 46, Lower Back (Back) | 47, Hip-Pelvis (Back Left) | 48, Hip-Pelvis (Back Right) | 49, Tailbone-Sacrum (Back) | 50, Thigh (Back Left) | 51, Thigh (Back Right) | 52, Knee (Back Left) | 53, Knee (Back Right) | 54, Shin-Calf (Back Left) | 55, Shin-Calf (Back Right) | 56, Ankle (Back Left) | 57, Ankle (Back Right) | 58, Foot (Back Left) | 59, Foot (Back Right)",
+            "image": "img/do_touch_net_body_grey.png",
+            "width": 518,
+            "height": 532,
+            "hideInput": true,
+            "singleSelect": false,
+            "fillColor": "0000cc",
+            "map": "maps/do_touch_net_body_grey.html"
+        },
         "VA_CHART": {
             "name": "va_chart",
             "alt": "Valence Arousal Chart",
