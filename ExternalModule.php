@@ -118,9 +118,8 @@ class ExternalModule extends AbstractExternalModule {
      *   The relative path to the js file.
      */
     protected function includeJs($path) {
-        // For shib installations, it is necessary to use the API endpoint for resources
-        global $auth_meth;
-        $ext_path = $auth_meth == 'shibboleth' ? $this->getUrl($path, true, true) : $this->getUrl($path);
+        // Use noauth method, but not the API endpoint, to load resources while not in network
+        $ext_path = $this->getUrl($path, true, false);
         echo '<script src="' . $ext_path . '"></script>';
     }
 

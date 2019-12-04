@@ -3,6 +3,16 @@ All notable changes to the Imagemap module will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 
+## [1.4.3] - 2019-12-04
+### Added
+- Improve documentation. (Geoffroey-Allen Franklin)
+- Add DO-Touch.NET images, maps, and description. (Geoffroey-Allen Franklin)
+- Standardize DO-Touch.NET filenames. (Marly Gotti)
+
+### Changed
+- Use noauth but NOT api endpoint to load JS files (Kyle Chesney)
+
+
 ## [1.4.2] - 2019-06-27
 ### Added
 - Add description and copyright information for the mbody and va_char imagemaps. (Marly Cormar)
