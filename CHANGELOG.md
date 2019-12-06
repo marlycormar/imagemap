@@ -2,6 +2,10 @@
 All notable changes to the Imagemap module will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.4.4] - 2019-12-06
+### Added
+- Add DOI to README (Philip Chase)
+
 
 ## [1.4.3] - 2019-12-04
 ### Added
