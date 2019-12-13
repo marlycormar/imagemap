@@ -1,4 +1,9 @@
 # REDCap module: Image Map
+
+
+[![DOI](https://zenodo.org/badge/115049747.svg)](https://zenodo.org/badge/latestdoi/115049747)
+
+
 This REDCap module replaces an input, radio, or checkbox field with an image that users can interact with to select one or more options. Specific applications include a body map (with over 70 body regions), a smile scale from 1-7 with facial expressions, three representations of teeth and teeth surfaces, among others. See below for a complete list of current imagemaps. Future versions will allow admins and users to add additional maps via the module configuration. The module is tied to questions via the `@IMAGEMAP` action tag and the name of one of the pre-defined image maps.  e.g. `@IMAGEMAP=PAINMAP_FEMALE`.
 
 
@@ -85,11 +90,14 @@ Michigan Body Map (MBM) reflects body areas where chronic pain may be experience
 ![BEES](./img/bees.png)
 
 
-**`DO-Touch_NET-Body_colour`** and **`DO-Touch_NET-Body-grey`**
+ HEAD
+
+**`DO_TOUCH_NET_BODY_COLOUR`** and **`DO_TOUCH_NET_BODY_GREY`**
 
 DO-Touch.NET body region image map designed for use in osteopathic manipulative medicine (OMM) research.
-![DO-Touch_NET-Body_colour](/img/DO-Touch_NET-Body_colour.png)
-![DO-Touch_NET-Body_grey](/img/DO-Touch_NET-Body_grey.png)
+![DO_TOUCH_NET_BODY_COLOUR](./img/do_touch_net_body_colour.png)
+![DO_TOUCH_NET_BODY_GREY](./img/do_touch_net_body_grey.png)
+ pr/1
 
 
 ## Usage
@@ -108,8 +116,10 @@ To display one of the images above in a survey or data entry form, add a new fie
 @IMAGEMAP=VA_CHART
 @IMAGEMAP=MBODY
 @IMAGEMAP=BEES
-@IMAGEMAP=DO-Touch_NET-Body_colour
-@IMAGEMAP=DO-Touch_NET-Body_grey
+ HEAD
+@IMAGEMAP=DO_TOUCH_NET_BODY_COLOUR
+@IMAGEMAP=DO_TOUCH_NET_BODY_GREY
+ pr/1
 ```
 
 Each region of an image is associated with a key, for example, the "Ankle (front-left)" of the female body diagram is linked to the key "f34". To find a particular key for a body part, please refer to the HTML files (map files) located in the folder `maps`. After selecting multiple body parts, the field containing the action tag `@IMAGEMAP` will have as a value a string of comma-separated keys, e.g. "f36,f17,f18,f21". Similarly, if using the faces diagram, the field containing the action tag (e.g. `@IMAGEMAP=SMILE_SCALE`) will have the value corresponding to the face clicked.
@@ -117,7 +127,9 @@ Each region of an image is associated with a key, for example, the "Ankle (front
 
 ## Testing instrument
 
-This project includes an [Example Instrument](docs/Instrument/Example.zip) that includes each of these image maps. It demonstrates different methods of using these image maps; which is suitable for testing or demonstration purposes.
+ HEAD
+This project includes an [Example Instrument](docs/Instrument\ Example.zip) that includes each of these image maps. It demonstrates different methods of using these image maps; which is suitable for testing or demonstration purposes.
+ pr/1
 
 
 ## Acknowledgements & Copyright
