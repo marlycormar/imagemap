@@ -59,7 +59,11 @@ Representation of a generic female body.
 
 **`PI-RADS`**
 
-![TEETH](./img/pirads.png)
+![PIRADS](./img/pirads.png)
+
+**`PI-RADS v2.1`**
+
+![PI-RADS_V2-1](./img/pirads_v2.1.png)
 
 
 **`RHEUMATOID_MAN`**
@@ -104,6 +108,7 @@ To display one of the images above in a survey or data entry form, add a new fie
 @IMAGEMAP=TEETH_SURFACE
 @IMAGEMAP=TEETH
 @IMAGEMAP=PIRADS
+@IMAGEMAP=PI-RADS_V2-1
 @IMAGEMAP=RHEUMATOID_MAN
 @IMAGEMAP=VA_CHART
 @IMAGEMAP=MBODY
