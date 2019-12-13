@@ -64,7 +64,12 @@ Representation of a generic female body.
 
 **`PI-RADS`**
 
-![TEETH](./img/pirads.png)
+![PIRADS](./img/pirads.png)
+
+
+**`PI-RADS_V2-1`**
+
+![PI-RADS_V2-1] (./img/pi-rads_v2.1.png)
 
 
 **`RHEUMATOID_MAN`**
@@ -90,14 +95,12 @@ Michigan Body Map (MBM) reflects body areas where chronic pain may be experience
 ![BEES](./img/bees.png)
 
 
- HEAD
-
 **`DO_TOUCH_NET_BODY_COLOUR`** and **`DO_TOUCH_NET_BODY_GREY`**
 
 DO-Touch.NET body region image map designed for use in osteopathic manipulative medicine (OMM) research.
 ![DO_TOUCH_NET_BODY_COLOUR](./img/do_touch_net_body_colour.png)
 ![DO_TOUCH_NET_BODY_GREY](./img/do_touch_net_body_grey.png)
- pr/1
+
 
 
 ## Usage
@@ -112,14 +115,13 @@ To display one of the images above in a survey or data entry form, add a new fie
 @IMAGEMAP=TEETH_SURFACE
 @IMAGEMAP=TEETH
 @IMAGEMAP=PIRADS
+@IMAGEMAP=PI-RADS_V2-1
 @IMAGEMAP=RHEUMATOID_MAN
 @IMAGEMAP=VA_CHART
 @IMAGEMAP=MBODY
 @IMAGEMAP=BEES
- HEAD
 @IMAGEMAP=DO_TOUCH_NET_BODY_COLOUR
 @IMAGEMAP=DO_TOUCH_NET_BODY_GREY
- pr/1
 ```
 
 Each region of an image is associated with a key, for example, the "Ankle (front-left)" of the female body diagram is linked to the key "f34". To find a particular key for a body part, please refer to the HTML files (map files) located in the folder `maps`. After selecting multiple body parts, the field containing the action tag `@IMAGEMAP` will have as a value a string of comma-separated keys, e.g. "f36,f17,f18,f21". Similarly, if using the faces diagram, the field containing the action tag (e.g. `@IMAGEMAP=SMILE_SCALE`) will have the value corresponding to the face clicked.
@@ -127,9 +129,7 @@ Each region of an image is associated with a key, for example, the "Ankle (front
 
 ## Testing instrument
 
- HEAD
 This project includes an [Example Instrument](docs/Instrument\ Example.zip) that includes each of these image maps. It demonstrates different methods of using these image maps; which is suitable for testing or demonstration purposes.
- pr/1
 
 
 ## Acknowledgements & Copyright
