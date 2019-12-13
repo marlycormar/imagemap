@@ -167,19 +167,6 @@
             "data_dict_default": "1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 19, 19 | 20, 20 | 21, 21 | 22, 22 | 23, 23 | 24, 24 | 25, 25 | 26, 26 | 27, 27 | 28, 28 | 29, 29 | 30, 30",
             "fillColor": "00aa00"
         },
-		"PI-RADS_V2-1": {
-			"name": "pi-rads_v2-1",
-			"alt": "PI-RADS v2.1",
-			"desc": "Prostate imaging - reporting and data system version 2.1 (2019)",
-			"image": "img/pirads_v2.1.png",
-			"width": "513",
-			"height": "631",
-			"map": "maps/pirads_v2.1.html",
-			"hideInput": true,
-			"options": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41",
-			"data_dict_default": "1, Right seminal vesicles | 2, Left seminal vesicles | 3, Right anterior fibromuscular stroma base | 4, Left anterior fibromuscular stroma base | 5, Right anterior peripheral zone base | 6, Left anterior peripheral zone base | 7, Right anterior transition zone base | 8, Left anterior transition zone base | 9, Right lateral posterior peripheral zone base | 10, Left lateral posterior peripheral zone base | 11, Right posterior reansition zone base | 12, Left posterior transition zone base | 13, Right centeral zone base | 14, Left central zone base | 15, Right medial posterior peripheral zone base | 16, Left medial posterior peripheral zone base | 17, Right anterior fibromuscular stroma mid | 18, Left anterior fibromuscular stroma mid | 19, Right anterior peripheral zone mid | 20, Left anterior peripheral zone mid | 21, Right anterior transition zone mid | 22, Left anterior transition zone mid | 23, Right lateral posterior peripheral zone mid | 24, Left lateral posterior peripheral zone mid | 25, Right posterior transition zone mid | 26, Left posterior transition zone mid | 27, Right medial posterior peripheral zone mid | 28, Left medial posterior peripheral zone mid | 29, Right anterior fibromuscular stroma apex | 30, Left anterior fibromuscular stroma apex | 31, Right anterior peripheral zone apex | 32, Left anterior peripheral zone apex | 33, Right anterior transition zone apex | 34, Left anterior transition zone apex | 35, Right lateral posterior peripheral zone apex | 36, Left lateral posterior peripheral zone apex | 37, Right medial posterior peripheral zone apex | 38, Left medial posterior peripheral zone apex | 39, Right posterior transtion zone apex | 40, Left posterior transtion zone apex | 41, External urethral sphincter",
-			"fillColor": "00aa00"
-		},
         "BEES": {
             "name": "improved_pain_scale",
             "alt": "Improved Pain Scale",
