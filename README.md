@@ -98,7 +98,7 @@ DO-Touch.NET body region image map designed for use in osteopathic manipulative 
 **`66SWOLLEN_68TENDER_JOINT_COUNT`**
 
 The 66 Swollen / 68 Tender Joint Count can be used to record the number of tender and swollen joints in patients with inflammatory arthritis e.g. psoriatic arthritis, rheumatoid arthritis. These counts can be used in calculated fields to generate disease activity scores in combination with other variables e.g. DAPSA, DAS28 scores.
-![66SWOLLEN_68TENDER_JOINT_COUNT](./img/66swollen_68tender_joint_count.jpg)
+![66SWOLLEN_68TENDER_JOINT_COUNT](./img/66swollen_68tender_joint_count.png)
 
 
 ## Usage
