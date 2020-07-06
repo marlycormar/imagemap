@@ -2,6 +2,12 @@
 All notable changes to the Imagemap module will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+
+## [1.5.0] - 2020-07-06
+### Added
+- Add 66 Swollen 68 Tender Joint Count Map (tom.lynch)
+
+
 ## [1.4.4] - 2019-12-06
 ### Added
 - Add DOI to README (Philip Chase)
