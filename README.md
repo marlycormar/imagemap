@@ -1,6 +1,8 @@
 # REDCap module: Image Map
 
+
 [![DOI](https://zenodo.org/badge/115049747.svg)](https://zenodo.org/badge/latestdoi/115049747)
+
 
 This REDCap module replaces an input, radio, or checkbox field with an image that users can interact with to select one or more options. Specific applications include a body map (with over 70 body regions), a smile scale from 1-7 with facial expressions, three representations of teeth and teeth surfaces, among others. See below for a complete list of current imagemaps. Future versions will allow admins and users to add additional maps via the module configuration. The module is tied to questions via the `@IMAGEMAP` action tag and the name of one of the pre-defined image maps.  e.g. `@IMAGEMAP=PAINMAP_FEMALE`.
 
@@ -62,7 +64,12 @@ Representation of a generic female body.
 
 **`PI-RADS`**
 
-![TEETH](./img/pirads.png)
+![PIRADS](./img/pirads.png)
+
+
+**`PI-RADS_V2-1`**
+
+![PI-RADS_V2-1](./img/pirads_v2.1.png)
 
 
 **`RHEUMATOID_MAN`**
@@ -113,6 +120,7 @@ To display one of the images above in a survey or data entry form, add a new fie
 @IMAGEMAP=TEETH_SURFACE
 @IMAGEMAP=TEETH
 @IMAGEMAP=PIRADS
+@IMAGEMAP=PI-RADS_V2-1
 @IMAGEMAP=RHEUMATOID_MAN
 @IMAGEMAP=VA_CHART
 @IMAGEMAP=MBODY
